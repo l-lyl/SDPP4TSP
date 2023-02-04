@@ -1,5 +1,5 @@
 # SDPP4TSP
-SDPP for temporal sets prediction
+SDPP for TSP
 
 
 Coming soon!
