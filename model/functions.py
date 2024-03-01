@@ -141,8 +141,6 @@ def stm(sets_seqs: List[List[torch.Tensor]],
     set_embed_seqs = set_embedding(sets_seqs, set_embed_module)
     padded_set_embed_seqs, padding_mask = pad_sequence(set_embed_seqs)
 
-    # print(f'stm {padded_set_embed_seqs.shape}')
-
     padded_times_seqs, _ = pad_sequence(times_seqs)
 
     # time encoding
