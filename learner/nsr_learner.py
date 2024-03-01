@@ -26,7 +26,6 @@ class NSRLearner(Learner):
                  cuda: int):
         super(NSRLearner, self).__init__(model_cls, train_dl, valid_dl, test_dl, config, cuda)
 
-        # get loss_func
         self.loss_func = getattr(nn, config['loss'])(reduction=config["reduction"])
 
     def train(self):
