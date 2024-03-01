@@ -93,7 +93,7 @@ class SNSRec(nn.Module):
         item_times_seqs = input_batch.get_item_times()
         set_times_seqs = input_batch.get_set_times()
         
-        targets = input_batch.get_set_targets()
+        targets = input_batch.get_set_targets() 
         
         items_seqs_emb = [self.item_embed(items) for items in items_seqs]
         padded_items_seqs, items_padding_mask = pad_sequence(items_seqs_emb) 
